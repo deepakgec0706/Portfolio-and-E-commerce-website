@@ -1,0 +1,300 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #df42e2;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 1rem;
+    color: rgb(2, 0, 5);
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+}
+
+.project {
+    background: #f4f4f4;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input, form textarea, form button {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #45a049;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f2f2f2;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+  }
+  
+  .product {
+    background: #fff;
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .product h3 {
+    margin: 10px 0 5px;
+  }
+  
+  .product button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .product button:hover {
+    background-color: #218838;
+  }
+  
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  header {
+    background-color: #59a5ec;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #111;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #444;
+    font-size: 16px;
+  }
+  
+  .hero {
+    background-image: url('https://i0.wp.com/traveltoyournature.com/wp-content/uploads/2023/07/beautiful-nature-india-1-scaled.jpeg?resize=2048%2C1536&ssl=1');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+  }
+  
+  .overlay h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .overlay p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .search-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .search-box input,
+  .search-box select {
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+  }
+  
+  .search-box button {
+    background-color: #0073e6;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .info {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .app-links img {
+    height: 40px;
+    margin: 10px;
+  }
+  
+
+  
+
+  #about h2 {
+    font-size: 32px;
+    color: #0077cc;
+    margin-bottom: 20px;
+    border-left: 5px solid #0077cc;
+    padding-left: 15px;
+  }
+  #about p, 
+#about br {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.qualification {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e80935;
+    background-color: #68b6e6;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  .qualification span {
+    display: block;
+    font-size: 15px;
+    color: rgb(5, 59, 80);
+    margin-top: 8px;
+    padding-left: 10px;
+    position: relative;
+  }
+  .qualification span::before {
+    content: "•";
+    color: #0c0909;
+    position: absolute;
+    left: 0;
+  }
+
+
+  #skills h2 {
+    font-size: 32px;
+    color: #0077cc;
+    margin-bottom: 20px;
+    border-left: 5px solid #0077cc;
+    padding-left: 15px;
+  }
+  .skills span {
+    display: block;
+    font-size: 15px;
+    color: rgb(5, 59, 80);
+    margin-top: 8px;
+    padding-left: 10px;
+    position: relative;
+  }
+  .skills span::before {
+    content: "•";
+    color: #0c0909;
+    position: absolute;
+    left: 0;
+  }
+
+  .skills {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e80935;
+    background-color: #68b6e6;
+    border-radius: 8px;
+    padding: 20px;
+  }

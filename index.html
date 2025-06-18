@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="#about" onclick="toggleAbout('about')">About Me</a>
+            <a href="#skills"  onclick="toggleSkills('skills')">Skills</a>
+            <a href="#projects" onclick="toggleProjects('projects')">Projects</a>
+           
+        </nav>
+    </header>
+
+    <section id="about" style="display: none;">
+        <h2>About Me</h2>
+        <p>I am a recent IT graduate with a passion for web development. I specialize in creating interactive and responsive websites. </p>
+            <br>I have recently completed my degree in Information Technology, where I gained a strong foundation in computer science principles, programming, and software development. During my studies, I discovered a deep interest in web development, which led me to pursue additional knowledge and hands-on experience in this field.
+            <br>
+            <br>My passion lies in building interactive websites—those that respond to user actions smoothly, such as form submissions, dynamic content updates, and real-time feedback. I enjoy using technologies like HTML, CSS, JavaScript, and modern libraries and frameworks such as React, Angular, or Vue.js to make web applications both functional and engaging.
+            <div class="qualification">
+                <p>My Qualification:</p>
+                <span>Degree: B.Tech</span>
+                <span>Branch: Computer Science</span>
+                <span>College Name: Abc Engineering College</span>
+              </div>
+        
+    </section>
+
+    <section id="skills" style="display: none;">
+        <h2>My Skills</h2>
+        <div class="skills">
+            
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Responsive Design</span>
+          </div>
+      
+    </section>
+
+    <section id="projects" style="display: none;">
+        <h1>work experience:</h1>
+        <p>I have 4+ years of professional experience as a Java Full Stack Developer, primarily working with HTML, CSS, and JavaScript. In your role at Altimetrik, I have utilized these front-end technologies extensively to build responsive and 
+            user-friendly interfaces for corporate e-banking applications. </p>
+        <h2>Projects:</h2>
+        <div class="project">
+            <h3>Project 1:<a href="#contact" onclick="toggleContacts('contact')">Portfolio Website</a>
+            </h3>
+            
+
+            <p>Designed and developed a responsive personal portfolio website to showcase professional projects, skills, and contact details. The website was built entirely using core web technologies — HTML, CSS, and vanilla JavaScript 
+                — without relying on any front-end frameworks.<br>This website is basically for enquiry form of graduated students</p>
+            <p>Tech Stack: HTML5, CSS3, JavaScript </p>
+        </div>
+        <div class="project">
+            <h3>Project 2: <a href="#myShop" onclick="toggleShop('myShop')">E-commerce Website</a></h3>
+            <p>A responsive and interactive single-page E-commerce website that allows users to browse products and add them to a cart. The design focuses on simplicity, clean UI, and smooth interactions 
+                using core web technologies without any frameworks or libraries.</p>
+                <p>Tech Stack: HTML5, CSS3, JavaScript </p>
+        </div>
+    </section>
+
+    <section id="contact" style="display: none;" >
+        <h2>Contact Me</h2>
+        <form>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required>
+            
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required>
+
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" name="gender" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="text" id="dob" name="dob" max="2007-06-18" required>
+
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="mobile" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+            <small>Enter a 10-digit number </small>
+
+            <label for="lctn">City / Location:</label>
+            <input type="text" id="lctn" name="lctn" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+          
+            <label for="address">Address :</label>
+            <textarea id="address" name="address" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+   
+    <script src="script.js"></script>
+   <section id="myShop" style="display: none;" >
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Simple E-Commerce</title>
+        <link rel="stylesheet" href="style.css" />
+      </head>
+
+      <body>
+
+        <header>
+          <h1>E-commerce Website</h1>
+          <div id="cart">🛒 Cart (<span id="cart-count">0</span>)</div>
+        </header>
+      
+        <main class="product-grid">
+          <div class="product">
+            <img src="https://d2fy0k1bcbbnwr.cloudfront.net/Designs_Inners_and_Outers/Tshirts/Men/tshirt_hs_men_pat_d48_o.jpg" alt="Product 1" />
+            <h3>Product 1</h3>
+            <p>₹499</p>
+            <button onclick="addToCart()">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS29_N_ZB8STDmkacRby8PGLG0bZvTZsmG0w&s" alt="Product 2" />
+            <h3>Product 2</h3>
+            <p>₹799</p>
+            <button onclick="addToCart()">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-7--n3DLRfU10SHObFj5PysBqHxhLWSdGJw&s" alt="Product 3" />
+            <h3>Product 3</h3>
+            <p>₹999</p>
+            <button onclick="addToCart()">Add to Cart</button>
+          </div>
+        </main>
+        
+        <script src="script.js"></script>
+      </body>
+    </section>
+    
+   
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Free Stock Images</title>
+        <link rel="stylesheet" href="style.css" />
+      </head>
+      <body>
+    
+      
+        <section class="hero">
+          <div class="overlay">
+            <h2>Free High Quality Images</h2>
+            <p>Over 1,120,000 free stock photos, gif and art illustrations</p>
+            <div class="search-box">
+              <input type="text" placeholder="Search images, gif and videos" />
+              <select>
+                <option>All images</option>
+                <option>Photos</option>
+                <option>Videos</option>
+                <option>Gif</option>
+              </select>
+              <button onclick="search()">🔍</button>
+            </div>
+          </div>
+        </section>
+      
+        <section class="info">
+          <h3>Free images and videos you can use anywhere</h3>
+          <p>Image-Search is a vibrant community of creatives sharing copyright-free content.</p>
+          <div class="app-links">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" />
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" />
+          </div>
+        </section>
+   
+        <footer>
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+      </body>
+   
+
+</body>
+</html>
